@@ -39,7 +39,7 @@ jobs:
     - name: Run filter
       run: python filter_defect_listings.py
 
-    - name: Update followed listings (remove expired ones)
+    - name: Update followed and excluded listings
       run: |
         python -c "
         import json
@@ -53,6 +53,13 @@ jobs:
             with open(followed_file, 'r', encoding='utf-8') as f:
                 followed_listings = json.load(f)
 
+        # Load current excluded listings if they exist
+        excluded_file = 'excluded_listings.json'
+        excluded_listings = {}
+        if os.path.exists(excluded_file):
+            with open(excluded_file, 'r', encoding='utf-8') as f:
+                excluded_listings = json.load(f)
+
         # Load current available listings
         current_listings = {}
         if os.path.exists('olx_defect_only.csv'):
@@ -63,20 +70,79 @@ jobs:
                     current_listings[listing_id] = row
 
         # Remove expired followed listings (those no longer in current results)
-        expired = []
+        expired_followed = []
         for listing_id, listing in followed_listings.items():
             if listing_id not in current_listings:
-                expired.append(listing_id)
+                expired_followed.append(listing_id)
 
-        for listing_id in expired:
+        for listing_id in expired_followed:
             del followed_listings[listing_id]
             print(f'Removed expired followed listing: {listing_id}')
 
-        # Save updated followed listings (this maintains persistence across runs)
+        # Note: Excluded listings are permanent and not auto-removed
+
+        # Track price changes for followed listings
+        price_history_file = 'price_history.json'
+        price_history = {}
+        if os.path.exists(price_history_file):
+            with open(price_history_file, 'r', encoding='utf-8') as f:
+                price_history = json.load(f)
+
+        # Update price history and detect changes
+        price_changes = {}
+        for listing_id, current_listing in followed_listings.items():
+            current_price = current_listing.get('price', 'N/A')
+            previous_price = price_history.get(listing_id, {}).get('price')
+
+            if previous_price and previous_price != current_price and previous_price != 'N/A' and current_price != 'N/A':
+                # Parse prices to compare numerically
+                try:
+                    import re
+                    def parse_price(price_str):
+                        if not price_str or price_str == 'N/A':
+                            return None
+                        match = re.search(r'(\d+(?:\.\d{3})*(?:,\d{2})?)', price_str.replace('.', '').replace(',', '.'))
+                        return float(match.group(1)) if match else None
+
+                    current_numeric = parse_price(current_price)
+                    previous_numeric = parse_price(previous_price)
+
+                    if current_numeric is not None and previous_numeric is not None:
+                        if current_numeric > previous_numeric:
+                            price_changes[listing_id] = {'change': 'up', 'old_price': previous_price, 'new_price': current_price}
+                            print(f'📈 Price increased for {listing_id}: {previous_price} → {current_price}')
+                        elif current_numeric < previous_numeric:
+                            price_changes[listing_id] = {'change': 'down', 'old_price': previous_price, 'new_price': current_price}
+                            print(f'📉 Price decreased for {listing_id}: {previous_price} → {current_price}')
+                except Exception as e:
+                    print(f'Error comparing prices for {listing_id}: {e}')
+
+            # Update history
+            price_history[listing_id] = {
+                'price': current_price,
+                'last_updated': '2024-01-01T00:00:00Z',  # Current timestamp would be better
+                'changes': price_history.get(listing_id, {}).get('changes', [])
+            }
+
+            # Add new change if detected
+            if listing_id in price_changes:
+                price_history[listing_id]['changes'].append(price_changes[listing_id])
+
+        # Save price history
+        with open(price_history_file, 'w', encoding='utf-8') as f:
+            json.dump(price_history, f, ensure_ascii=False, indent=2)
+
+        # Save updated followed listings
         with open(followed_file, 'w', encoding='utf-8') as f:
             json.dump(followed_listings, f, ensure_ascii=False, indent=2)
 
+        # Save excluded listings (unchanged, just ensure it exists)
+        with open(excluded_file, 'w', encoding='utf-8') as f:
+            json.dump(excluded_listings, f, ensure_ascii=False, indent=2)
+
         print(f'Updated followed listings: {len(followed_listings)} remaining')
+        print(f'Excluded listings: {len(excluded_listings)} permanent exclusions')
+        print(f'Price changes detected: {len(price_changes)}')
         "
 
     - name: Commit and push changes

@@ -107,6 +107,42 @@
             box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
         }
 
+        .price-indicator {
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        .price-change {
+            color: #666;
+            font-weight: normal;
+        }
+
+        .notification {
+            background: #fff3cd;
+            color: #856404;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 0.9em;
+            border: 1px solid #ffeaa7;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .notification:hover {
+            background: #ffeaa7;
+        }
+
+        .price-up {
+            border-left: 4px solid #27ae60 !important;
+            background: linear-gradient(to right, rgba(39, 174, 96, 0.1), white) !important;
+        }
+
+        .price-down {
+            border-left: 4px solid #e74c3c !important;
+            background: linear-gradient(to right, rgba(231, 76, 60, 0.1), white) !important;
+        }
+
         .listing-item {
             background: white;
             border: 1px solid #ddd;
@@ -277,6 +313,7 @@
                         </label>
                     </div>
                     <button id="saveSelected">💾 Save Selected to Followed</button>
+                    <button id="excludeSelected" class="delete-btn">🚫 Exclude Selected Permanently</button>
                 </div>
 
                 <div id="availableListings" class="loading">
@@ -305,8 +342,11 @@
     </div>
 
     <script>
-        let availableListings = [];
-        let followedListings = {};
+let availableListings = [];
+let followedListings = {};
+let excludedListings = {};
+let priceHistory = {};
+let dismissedNotifications = new Set();
 
         // Load data when page loads
         document.addEventListener('DOMContentLoaded', function() {
@@ -327,6 +367,24 @@
                 } catch (e) {
                     // Followed listings file might not exist yet
                     followedListings = {};
+                }
+
+                // Load excluded listings
+                try {
+                    const excludedResponse = await fetch('./excluded_listings.json');
+                    excludedListings = await excludedResponse.json();
+                } catch (e) {
+                    // Excluded listings file might not exist yet
+                    excludedListings = {};
+                }
+
+                // Load price history
+                try {
+                    const priceResponse = await fetch('./price_history.json');
+                    priceHistory = await priceResponse.json();
+                } catch (e) {
+                    // Price history file might not exist yet
+                    priceHistory = {};
                 }
 
                 // Update last modified time
@@ -366,12 +424,18 @@
         function renderAvailableListings() {
             const container = document.getElementById('availableListings');
 
-            if (availableListings.length === 0) {
+            // Filter out excluded listings
+            const visibleListings = availableListings.filter(listing => {
+                const listingId = getListingId(listing.link);
+                return !excludedListings[listingId];
+            });
+
+            if (visibleListings.length === 0) {
                 container.innerHTML = '<div class="empty-state">No listings available.</div>';
                 return;
             }
 
-            container.innerHTML = availableListings.map((listing, index) => {
+            container.innerHTML = visibleListings.map((listing, index) => {
                 const listingId = getListingId(listing.link);
                 const isFollowed = followedListings[listingId];
 
@@ -410,17 +474,42 @@
 
             container.innerHTML = followedIds.map(listingId => {
                 const listing = followedListings[listingId];
+                const history = priceHistory[listingId] || {};
+                const changes = history.changes || [];
+                const latestChange = changes.length > 0 ? changes[changes.length - 1] : null;
+                const hasNotification = latestChange && !dismissedNotifications.has(listingId);
+
+                let priceIndicator = '';
+                let notificationClass = '';
+
+                if (hasNotification) {
+                    if (latestChange.change === 'up') {
+                        priceIndicator = '📈';
+                        notificationClass = 'price-up';
+                    } else if (latestChange.change === 'down') {
+                        priceIndicator = '📉';
+                        notificationClass = 'price-down';
+                    }
+                }
+
                 return `
-                    <div class="listing-item" data-id="${listingId}">
+                    <div class="listing-item ${notificationClass}" data-id="${listingId}">
                         <div class="checkbox-container">
                             <input type="checkbox" class="followed-checkbox" data-id="${listingId}">
-                            <strong class="listing-title">${escapeHtml(listing.title)}</strong>
+                            <strong class="listing-title">
+                                ${priceIndicator ? `<span class="price-indicator">${priceIndicator}</span>` : ''}
+                                ${escapeHtml(listing.title)}
+                            </strong>
                         </div>
-                        <div class="listing-price">${escapeHtml(listing.price)}</div>
+                        <div class="listing-price">
+                            ${escapeHtml(listing.price)}
+                            ${latestChange ? `<br><small class="price-change">Was: ${escapeHtml(latestChange.old_price)}</small>` : ''}
+                        </div>
                         <div class="listing-details">
                             <div>Location: ${escapeHtml(listing.location || 'N/A')}</div>
                             <div>Date: ${escapeHtml(listing.date || 'N/A')}</div>
                             <div><a href="${escapeHtml(listing.link)}" target="_blank" class="listing-link">View on OLX ↗</a></div>
+                            ${hasNotification ? '<div class="notification">💰 Price changed! Click to dismiss</div>' : ''}
                         </div>
                     </div>
                 `;
@@ -429,6 +518,31 @@
             // Add event listeners
             document.querySelectorAll('.followed-checkbox').forEach(checkbox => {
                 checkbox.addEventListener('change', updateSelectAllFollowed);
+            });
+
+            // Add click handlers for notifications
+            document.querySelectorAll('.notification').forEach(notification => {
+                notification.addEventListener('click', function() {
+                    const listingItem = this.closest('.listing-item');
+                    const listingId = listingItem.dataset.id;
+
+                    // Dismiss notification
+                    dismissedNotifications.add(listingId);
+                    saveDismissedNotifications();
+
+                    // Remove notification styling
+                    listingItem.classList.remove('price-up', 'price-down');
+                    const priceIndicator = listingItem.querySelector('.price-indicator');
+                    if (priceIndicator) {
+                        priceIndicator.remove();
+                    }
+                    const priceChange = listingItem.querySelector('.price-change');
+                    if (priceChange) {
+                        priceChange.closest('br').remove();
+                        priceChange.remove();
+                    }
+                    this.remove();
+                });
             });
         }
 
@@ -503,6 +617,30 @@
             alert(`Added ${selectedCheckboxes.length} listings to followed!`);
         });
 
+        document.getElementById('excludeSelected').addEventListener('click', function() {
+            const selectedCheckboxes = document.querySelectorAll('#availableListings .listing-checkbox:checked');
+
+            if (selectedCheckboxes.length === 0) {
+                alert('Please select some listings to exclude.');
+                return;
+            }
+
+            if (confirm(`Are you sure you want to permanently exclude ${selectedCheckboxes.length} listing(s)? They will not appear again in future scrapes.`)) {
+                selectedCheckboxes.forEach(checkbox => {
+                    const listingId = checkbox.dataset.id;
+                    const listing = availableListings.find(l => getListingId(l.link) === listingId);
+                    if (listing) {
+                        excludedListings[listingId] = listing;
+                    }
+                });
+
+                saveExcludedListings();
+                renderAvailableListings();
+
+                alert(`Permanently excluded ${selectedCheckboxes.length} listings!`);
+            }
+        });
+
         document.getElementById('deleteSelected').addEventListener('click', function() {
             const selectedCheckboxes = document.querySelectorAll('.followed-checkbox:checked');
             const count = selectedCheckboxes.length;
@@ -533,6 +671,17 @@
             document.getElementById('followedListings').textContent = Object.keys(followedListings).length;
         }
 
+        function saveExcludedListings() {
+            // In a real implementation, this would need to be saved server-side
+            // For now, we'll just store in localStorage as a demo
+            localStorage.setItem('excludedListings', JSON.stringify(excludedListings));
+        }
+
+        function saveDismissedNotifications() {
+            // Store dismissed notifications in localStorage
+            localStorage.setItem('dismissedNotifications', JSON.stringify([...dismissedNotifications]));
+        }
+
         function getListingId(link) {
             // Extract listing ID from URL
             const match = link.match(/-ID([a-zA-Z0-9]+)\.html/);
@@ -545,10 +694,20 @@
             return div.innerHTML;
         }
 
-        // Load followed listings from localStorage on page load
+        // Load followed and excluded listings from localStorage on page load
         const savedFollowed = localStorage.getItem('followedListings');
         if (savedFollowed) {
             followedListings = JSON.parse(savedFollowed);
+        }
+
+        const savedExcluded = localStorage.getItem('excludedListings');
+        if (savedExcluded) {
+            excludedListings = JSON.parse(savedExcluded);
+        }
+
+        const savedDismissed = localStorage.getItem('dismissedNotifications');
+        if (savedDismissed) {
+            dismissedNotifications = new Set(JSON.parse(savedDismissed));
         }
     </script>
 </body>

@@ -145,6 +145,13 @@ class OLXDefectFilter:
 
         return ""
 
+    def get_listing_id(self, link):
+        """Extract listing ID from URL"""
+        # Extract listing ID from URL pattern like -IDxxxxx.html
+        import re
+        match = re.search(r'-ID([a-zA-Z0-9]+)\.html', link)
+        return match.group(1) if match else link
+
     def extract_price_from_page(self, html_content):
         """Extract the most accurate price from an individual listing page"""
         try:
@@ -245,9 +252,15 @@ class OLXDefectFilter:
 
         return None
 
-    def should_exclude_listing(self, title, link, price=None):
-        """Check if a listing should be excluded and return corrected price"""
+    def should_exclude_listing(self, title, link, price=None, excluded_listings=None):
         """Check if a listing should be excluded based on title, URL, description, and price"""
+        # Check if listing is in permanent exclusion list
+        if excluded_listings:
+            listing_id = self.get_listing_id(link)
+            if listing_id in excluded_listings:
+                print(f"❌ Excluding (manually excluded): {title[:50]}...")
+                return True
+
         # Check title for forbidden phrases
         if self.has_forbidden_phrase(title):
             print(f"❌ Excluding (title quality): {title[:50]}...")
@@ -297,6 +310,14 @@ class OLXDefectFilter:
         filtered_listings = []
         excluded_count = 0
 
+        # Load permanently excluded listings
+        excluded_listings = {}
+        try:
+            with open('excluded_listings.json', 'r', encoding='utf-8') as f:
+                excluded_listings = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            excluded_listings = {}
+
         try:
             with open(input_file, 'r', encoding='utf-8') as csvfile:
                 reader = csv.DictReader(csvfile)
@@ -319,7 +340,7 @@ class OLXDefectFilter:
                         continue
 
                     price = row.get('price', '')
-                    if self.should_exclude_listing(title, link, price):
+                    if self.should_exclude_listing(title, link, price, excluded_listings):
                         excluded_count += 1
                     else:
                         filtered_listings.append(row)
