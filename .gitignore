@@ -25,9 +25,10 @@ venv/
 env/
 ENV/
 
-# Data files (you might want to keep these out of version control)
-*.json
-*.csv
+# Data files (keep website data, ignore others)
+# Keep: olx_defect_only.csv, followed_listings.json, olx_listings.json (for website)
+# Ignore: other temporary data files
+olx_listings.csv
 
 # IDE
 .vscode/
