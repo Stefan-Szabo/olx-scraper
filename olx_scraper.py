@@ -54,9 +54,26 @@ class OLXScraper:
             else:
                 # Look for any text containing lei or € or numbers that might be prices
                 text = listing_element.get_text()
-                price_match = re.search(r'(\d+(?:\.\d{3})*(?:,\d{2})?)\s*(lei|€|eur|ron)', text, re.I)
-                if price_match:
-                    price = price_match.group(0)
+                # Find all price matches and select the highest value one
+                price_matches = re.findall(r'(\d+(?:\.\d{3})*(?:,\d{2})?)\s*(lei|€|eur|ron)', text, re.I)
+
+                if price_matches:
+                    # Convert prices to numeric values and find the highest
+                    prices_with_values = []
+                    for match in price_matches:
+                        price_str, currency = match
+                        try:
+                            # Convert Romanian format (1.234,56) to float
+                            numeric_str = price_str.replace('.', '').replace(',', '.')
+                            numeric_value = float(numeric_str)
+                            prices_with_values.append((numeric_value, f"{price_str} {currency}"))
+                        except ValueError:
+                            continue
+
+                    if prices_with_values:
+                        # Select the highest price value
+                        prices_with_values.sort(key=lambda x: x[0], reverse=True)
+                        price = prices_with_values[0][1]  # Use the formatted price string
 
             # Find location (usually contains city/region info)
             location = "N/A"

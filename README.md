@@ -82,6 +82,39 @@ You can modify these settings in `olx_scraper.py`:
 - `max_retries`: Number of retries for failed requests (default: 3)
 - Delay between requests: Currently 1 second (can be adjusted)
 
+## 🚀 GitHub Pages Website
+
+This repository includes a GitHub Pages website that displays the filtered listings with an interactive interface.
+
+### Features:
+- **📊 Live Dashboard**: View all current defect listings
+- **⭐ Follow Listings**: Save interesting listings to a personal watchlist
+- **🔄 Auto Updates**: Site updates automatically every hour via GitHub Actions
+- **📱 Responsive Design**: Works on desktop and mobile devices
+
+### Accessing the Website:
+1. Go to your repository settings
+2. Scroll down to "Pages" section
+3. Set Source to "Deploy from a branch"
+4. Select "main" branch and "/ (root)" folder
+5. The site will be available at: `https://[your-username].github.io/olx-scraper/`
+
+### Website Functionality:
+- **Available Listings**: Shows all current defect listings that passed the filters
+- **Followed Listings**: Personal watchlist that persists across updates
+- **Auto Cleanup**: Expired listings are automatically removed from followed list
+- **Selection Interface**: Checkboxes and buttons to manage your followed listings
+
+**Note**: The "followed listings" feature uses localStorage for demonstration. For production use, consider implementing a backend service for persistent storage across devices.
+
+## 🤖 Automation
+
+The scraper runs automatically every hour via GitHub Actions:
+
+- **Schedule**: Every hour at :00 minutes
+- **Process**: Scrape → Filter → Update website → Commit changes
+- **Triggers**: Also runs on code changes or manual trigger
+
 ## Legal Note
 
 Please respect OLX's terms of service and robots.txt. This scraper is for educational purposes only. Consider the ethical implications and legal restrictions before using it for commercial purposes.

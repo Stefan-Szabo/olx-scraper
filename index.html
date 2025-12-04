@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Xbox Defect Listings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .last-updated {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            min-height: 600px;
+        }
+
+        .listings-section {
+            flex: 2;
+            padding: 30px;
+            border-right: 2px solid #ecf0f1;
+        }
+
+        .followed-section {
+            flex: 1;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .delete-btn {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+
+        .delete-btn:hover {
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+        }
+
+        .listing-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .listing-item:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        .listing-item.selected {
+            border-color: #3498db;
+            background: #ebf5fb;
+        }
+
+        .listing-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .listing-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c3e50;
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .listing-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #27ae60;
+            white-space: nowrap;
+        }
+
+        .listing-details {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .listing-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .listing-link:hover {
+            text-decoration: underline;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        .select-all {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #7f8c8d;
+            padding: 40px;
+            font-style: italic;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+
+        .stats {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .stat-label {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .listings-section {
+                border-right: none;
+                border-bottom: 2px solid #ecf0f1;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 OLX Xbox Defect Listings</h1>
+            <div class="last-updated" id="lastUpdated">Loading...</div>
+        </header>
+
+        <div class="stats" id="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="totalListings">-</div>
+                <div class="stat-label">Total Listings</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="followedListings">-</div>
+                <div class="stat-label">Followed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="lastUpdate">-</div>
+                <div class="stat-label">Last Update</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <section class="listings-section">
+                <h2>📋 Available Listings</h2>
+
+                <div class="controls">
+                    <div class="select-all">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="selectAllAvailable">
+                            Select All Available Listings
+                        </label>
+                    </div>
+                    <button id="saveSelected">💾 Save Selected to Followed</button>
+                </div>
+
+                <div id="availableListings" class="loading">
+                    Loading listings...
+                </div>
+            </section>
+
+            <section class="followed-section">
+                <h2>⭐ Followed Listings</h2>
+
+                <div class="controls">
+                    <div class="select-all">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="selectAllFollowed">
+                            Select All Followed Listings
+                        </label>
+                    </div>
+                    <button id="deleteSelected" class="delete-btn">🗑️ Delete Selected</button>
+                </div>
+
+                <div id="followedListings" class="empty-state">
+                    No followed listings yet. Select some from the left and click "Save Selected".
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        let availableListings = [];
+        let followedListings = {};
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadData();
+        });
+
+        async function loadData() {
+            try {
+                // Load available listings
+                const availableResponse = await fetch('./olx_defect_only.csv');
+                const availableText = await availableResponse.text();
+                availableListings = parseCSV(availableText);
+
+                // Load followed listings
+                try {
+                    const followedResponse = await fetch('./followed_listings.json');
+                    followedListings = await followedResponse.json();
+                } catch (e) {
+                    // Followed listings file might not exist yet
+                    followedListings = {};
+                }
+
+                // Update last modified time
+                const lastModified = new Date();
+                document.getElementById('lastUpdated').textContent =
+                    `Last updated: ${lastModified.toLocaleString()}`;
+
+                // Update stats
+                document.getElementById('totalListings').textContent = availableListings.length;
+                document.getElementById('followedListings').textContent = Object.keys(followedListings).length;
+                document.getElementById('lastUpdate').textContent = lastModified.toLocaleTimeString();
+
+                renderAvailableListings();
+                renderFollowedListings();
+
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('availableListings').innerHTML =
+                    '<div class="empty-state">Error loading listings. Please try again later.</div>';
+            }
+        }
+
+        function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+            const headers = lines[0].split(',').map(h => h.replace(/"/g, '').trim());
+
+            return lines.slice(1).map(line => {
+                const values = line.split(',').map(v => v.replace(/"/g, '').trim());
+                const obj = {};
+                headers.forEach((header, index) => {
+                    obj[header] = values[index] || '';
+                });
+                return obj;
+            });
+        }
+
+        function renderAvailableListings() {
+            const container = document.getElementById('availableListings');
+
+            if (availableListings.length === 0) {
+                container.innerHTML = '<div class="empty-state">No listings available.</div>';
+                return;
+            }
+
+            container.innerHTML = availableListings.map((listing, index) => {
+                const listingId = getListingId(listing.link);
+                const isFollowed = followedListings[listingId];
+
+                return `
+                    <div class="listing-item ${isFollowed ? 'selected' : ''}" data-id="${listingId}">
+                        <div class="checkbox-container">
+                            <input type="checkbox" class="listing-checkbox" data-id="${listingId}" ${isFollowed ? 'checked' : ''}>
+                            <strong class="listing-title">${escapeHtml(listing.title)}</strong>
+                        </div>
+                        <div class="listing-price">${escapeHtml(listing.price)}</div>
+                        <div class="listing-details">
+                            <div>Location: ${escapeHtml(listing.location || 'N/A')}</div>
+                            <div>Date: ${escapeHtml(listing.date || 'N/A')}</div>
+                            <div><a href="${escapeHtml(listing.link)}" target="_blank" class="listing-link">View on OLX ↗</a></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Add event listeners
+            document.querySelectorAll('#availableListings .listing-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', handleAvailableCheckboxChange);
+            });
+
+            updateSelectAllAvailable();
+        }
+
+        function renderFollowedListings() {
+            const container = document.getElementById('followedListings');
+            const followedIds = Object.keys(followedListings);
+
+            if (followedIds.length === 0) {
+                container.innerHTML = '<div class="empty-state">No followed listings yet. Select some from the left and click "Save Selected".</div>';
+                return;
+            }
+
+            container.innerHTML = followedIds.map(listingId => {
+                const listing = followedListings[listingId];
+                return `
+                    <div class="listing-item" data-id="${listingId}">
+                        <div class="checkbox-container">
+                            <input type="checkbox" class="followed-checkbox" data-id="${listingId}">
+                            <strong class="listing-title">${escapeHtml(listing.title)}</strong>
+                        </div>
+                        <div class="listing-price">${escapeHtml(listing.price)}</div>
+                        <div class="listing-details">
+                            <div>Location: ${escapeHtml(listing.location || 'N/A')}</div>
+                            <div>Date: ${escapeHtml(listing.date || 'N/A')}</div>
+                            <div><a href="${escapeHtml(listing.link)}" target="_blank" class="listing-link">View on OLX ↗</a></div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Add event listeners
+            document.querySelectorAll('.followed-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', updateSelectAllFollowed);
+            });
+        }
+
+        function handleAvailableCheckboxChange(event) {
+            const checkbox = event.target;
+            const listingId = checkbox.dataset.id;
+            const listingItem = checkbox.closest('.listing-item');
+
+            if (checkbox.checked) {
+                listingItem.classList.add('selected');
+            } else {
+                listingItem.classList.remove('selected');
+            }
+
+            updateSelectAllAvailable();
+        }
+
+        function updateSelectAllAvailable() {
+            const checkboxes = document.querySelectorAll('#availableListings .listing-checkbox');
+            const checkedBoxes = document.querySelectorAll('#availableListings .listing-checkbox:checked');
+            const selectAllCheckbox = document.getElementById('selectAllAvailable');
+
+            selectAllCheckbox.checked = checkboxes.length > 0 && checkboxes.length === checkedBoxes.length;
+            selectAllCheckbox.indeterminate = checkedBoxes.length > 0 && checkedBoxes.length < checkboxes.length;
+        }
+
+        function updateSelectAllFollowed() {
+            const checkboxes = document.querySelectorAll('.followed-checkbox');
+            const checkedBoxes = document.querySelectorAll('.followed-checkbox:checked');
+            const selectAllCheckbox = document.getElementById('selectAllFollowed');
+
+            selectAllCheckbox.checked = checkboxes.length > 0 && checkboxes.length === checkedBoxes.length;
+            selectAllCheckbox.indeterminate = checkedBoxes.length > 0 && checkedBoxes.length < checkboxes.length;
+        }
+
+        // Event listeners for buttons
+        document.getElementById('selectAllAvailable').addEventListener('change', function(e) {
+            const checkboxes = document.querySelectorAll('#availableListings .listing-checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = e.target.checked;
+                const listingItem = checkbox.closest('.listing-item');
+                if (e.target.checked) {
+                    listingItem.classList.add('selected');
+                } else {
+                    listingItem.classList.remove('selected');
+                }
+            });
+        });
+
+        document.getElementById('selectAllFollowed').addEventListener('change', function(e) {
+            const checkboxes = document.querySelectorAll('.followed-checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = e.target.checked;
+            });
+        });
+
+        document.getElementById('saveSelected').addEventListener('click', function() {
+            const selectedCheckboxes = document.querySelectorAll('#availableListings .listing-checkbox:checked');
+
+            selectedCheckboxes.forEach(checkbox => {
+                const listingId = checkbox.dataset.id;
+                const listing = availableListings.find(l => getListingId(l.link) === listingId);
+                if (listing) {
+                    followedListings[listingId] = listing;
+                }
+            });
+
+            saveFollowedListings();
+            renderAvailableListings();
+            renderFollowedListings();
+
+            alert(`Added ${selectedCheckboxes.length} listings to followed!`);
+        });
+
+        document.getElementById('deleteSelected').addEventListener('click', function() {
+            const selectedCheckboxes = document.querySelectorAll('.followed-checkbox:checked');
+            const count = selectedCheckboxes.length;
+
+            if (count === 0) {
+                alert('Please select some followed listings to delete.');
+                return;
+            }
+
+            if (confirm(`Are you sure you want to delete ${count} followed listing(s)?`)) {
+                selectedCheckboxes.forEach(checkbox => {
+                    const listingId = checkbox.dataset.id;
+                    delete followedListings[listingId];
+                });
+
+                saveFollowedListings();
+                renderFollowedListings();
+                renderAvailableListings(); // To update the "followed" indicators
+            }
+        });
+
+        function saveFollowedListings() {
+            // In a real implementation, this would need to be saved server-side
+            // For now, we'll just store in localStorage as a demo
+            localStorage.setItem('followedListings', JSON.stringify(followedListings));
+
+            // Update stats
+            document.getElementById('followedListings').textContent = Object.keys(followedListings).length;
+        }
+
+        function getListingId(link) {
+            // Extract listing ID from URL
+            const match = link.match(/-ID([a-zA-Z0-9]+)\.html/);
+            return match ? match[1] : link;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Load followed listings from localStorage on page load
+        const savedFollowed = localStorage.getItem('followedListings');
+        if (savedFollowed) {
+            followedListings = JSON.parse(savedFollowed);
+        }
+    </script>
+</body>
+</html>
