@@ -34,9 +34,24 @@ Run the scraper with the default search URL (xbox defect):
 python olx_scraper.py
 ```
 
-### Custom Search URL
+### Custom Search Terms (Recommended)
 
-Edit the `search_url` variable in `olx_scraper.py` to scrape any OLX search:
+Use the convenient wrapper script to search for any term:
+
+```bash
+python run_scraper.py "xbox defect" 10
+python run_scraper.py "iphone 12" 5
+python run_scraper.py "masina second hand" 20
+```
+
+The script will automatically:
+- Create the correct OLX URL
+- Save results to files named after your search term
+- Show a sample of results
+
+### Advanced Usage
+
+Edit the `search_url` variable in `olx_scraper.py` to scrape any specific OLX search URL:
 
 ```python
 search_url = "https://www.olx.ro/oferte/q-your-search-term/"
@@ -52,10 +67,12 @@ The scraper will create two output files:
 
 Each listing contains:
 - `title`: The listing title
-- `price`: Price in RON/lei or EUR
-- `location`: City/region where the item is located
-- `date`: When the listing was posted
-- `link`: Direct link to the listing
+- `price`: Price in RON/lei or EUR (extracted successfully ✅)
+- `location`: City/region where the item is located (currently shows "N/A" - needs refinement)
+- `date`: When the listing was posted (currently shows "N/A" - needs refinement)
+- `link`: Direct link to the listing (extracted successfully ✅)
+
+**Current Status**: The scraper successfully extracts titles, prices, and links. Location and date extraction may need updates as OLX changes their page structure.
 
 ## Configuration
 
