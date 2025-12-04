@@ -31,13 +31,33 @@ class OLXDefectFilter:
             "reparație"   # Exclude repair services (with diacritics)
         ]
 
-        # Price limits for different Xbox models (in RON)
+        # Unwanted PlayStation models to exclude
+        self.excluded_ps_models = [
+            "ps3", "psp", "playstation 3", "playstation3", "ps3", "psp"
+        ]
+
+        # Unwanted Nintendo Switch models to exclude
+        self.excluded_switch_models = [
+            "lite", "switch lite"
+        ]
+
+        # Price limits for different models (in RON)
         self.price_limits = {
+            # Xbox models
             "xbox one": 200,
             "xbox one s": 200,
             "xbox one x": 500,
             "xbox series s": 500,
-            "xbox series x": 800
+            "xbox series x": 700,
+            # PlayStation models
+            "ps4": 200,
+            "ps4 slim": 250,
+            "ps4 pro": 500,
+            "ps5": 700,
+            "ps5 digital": 600,
+            # Nintendo Switch models
+            "switch": 400,
+            "nintendo switch": 400
         }
 
     def get_page(self, url, max_retries=3):
@@ -68,18 +88,33 @@ class OLXDefectFilter:
                 return True
         return False
 
-    def identify_xbox_model(self, title):
-        """Identify the Xbox model from the title"""
+    def identify_model(self, title):
+        """Identify the console model from the title (Xbox, PS, Switch)"""
         title_lower = title.lower()
 
-        # Check for each model in order of specificity (longest first)
-        models = ["xbox series x", "xbox series s", "xbox one x", "xbox one s", "xbox one"]
+        # Check Xbox models (most specific first)
+        xbox_models = ["xbox series x", "xbox series s", "xbox one x", "xbox one s", "xbox one"]
+        for model in xbox_models:
+            if model in title_lower:
+                return model
 
-        for model in models:
+        # Check PlayStation models
+        ps_models = ["ps5 digital", "ps5", "ps4 pro", "ps4 slim", "ps4"]
+        for model in ps_models:
+            if model in title_lower:
+                return model
+
+        # Check Nintendo Switch models
+        switch_models = ["nintendo switch", "switch"]
+        for model in switch_models:
             if model in title_lower:
                 return model
 
         return None
+
+    def identify_xbox_model(self, title):
+        """Legacy method for backward compatibility"""
+        return self.identify_model(title)
 
     def parse_price(self, price_string):
         """Parse price string and return numeric value"""
@@ -288,9 +323,20 @@ class OLXDefectFilter:
             # Use the accurate price for filtering
             price = accurate_price
 
+        # Check for unwanted PlayStation models
+        title_lower = title.lower()
+        if any(excluded in title_lower for excluded in self.excluded_ps_models):
+            print(f"❌ Excluding (unwanted PS model): {title[:50]}...")
+            return True
+
+        # Check for unwanted Switch models
+        if any(excluded in title_lower for excluded in self.excluded_switch_models):
+            print(f"❌ Excluding (unwanted Switch model): {title[:50]}...")
+            return True
+
         # Check if price is too high for the model (using accurate price)
         if self.is_price_too_high(title, price):
-            model = self.identify_xbox_model(title)
+            model = self.identify_model(title)
             if model:
                 price_limit = self.price_limits.get(model, 0)
                 print(f"❌ Excluding (price too high - {price} > {price_limit} for {model}): {title[:50]}...")

@@ -87,10 +87,29 @@ You can modify these settings in `olx_scraper.py`:
 This repository includes a GitHub Pages website that displays the filtered listings with an interactive interface.
 
 ### Features:
-- **📊 Live Dashboard**: View all current defect listings
+- **📊 Live Dashboard**: View all current defect listings (Xbox, PlayStation, Nintendo Switch)
 - **⭐ Follow Listings**: Save interesting listings to a personal watchlist
+- **🚫 Permanent Exclusions**: Hide unwanted listings forever
+- **📈 Price Tracking**: Get notifications when followed items change price
 - **🔄 Auto Updates**: Site updates automatically every hour via GitHub Actions
 - **📱 Responsive Design**: Works on desktop and mobile devices
+
+### Supported Consoles & Filters:
+
+#### 🎮 **Xbox Series**
+- **Models**: One, One S, One X, Series S, Series X
+- **Price Limits**: 200-800 RON depending on model
+- **Exclusions**: Items described as flawless/perfect
+
+#### 🎮 **PlayStation**
+- **Wanted**: PS4 (normal/slim/pro), PS5 (all variants)
+- **Excluded**: PS3, PSP, and other old models
+- **Price Limits**: PS4 (200-500 RON), PS5 (600 RON max)
+
+#### 🎮 **Nintendo Switch**
+- **Wanted**: Standard Switch models
+- **Excluded**: Switch Lite variants
+- **Price Limit**: 400 RON max
 
 ### Accessing the Website:
 1. Go to your repository settings
@@ -112,7 +131,8 @@ This repository includes a GitHub Pages website that displays the filtered listi
 The scraper runs automatically every hour via GitHub Actions:
 
 - **Schedule**: Every hour at :00 minutes
-- **Process**: Scrape → Filter → Update website → Commit changes
+- **Searches**: Xbox defect, PlayStation defect, Nintendo Switch defect
+- **Process**: Scrape all searches → Filter → Update website → Commit changes
 - **Triggers**: Also runs on code changes or manual trigger
 
 ## Legal Note

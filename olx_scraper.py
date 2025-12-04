@@ -248,25 +248,48 @@ def main():
     # Example usage
     scraper = OLXScraper()
 
-    # The URL you provided
-    search_url = "https://www.olx.ro/oferte/q-xbox-defect/"
+    # Multiple search URLs
+    search_urls = [
+        "https://www.olx.ro/oferte/q-xbox-defect/",
+        "https://www.olx.ro/oferte/q-playstation-defect/",
+        "https://www.olx.ro/oferte/q-nintendo-switch-defect/"
+    ]
 
-    print(f"Starting scrape of: {search_url}")
-    listings = scraper.scrape_search(search_url, max_pages=5)  # Limit to 5 pages for testing
+    all_listings = []
+    for search_url in search_urls:
+        print(f"\n{'='*50}")
+        print(f"Starting scrape of: {search_url}")
+        print(f"{'='*50}")
 
-    if listings:
-        print(f"\nScraped {len(listings)} total listings")
+        listings = scraper.scrape_search(search_url, max_pages=5)  # Limit to 5 pages for testing
+        if listings:
+            all_listings.extend(listings)
+            print(f"✓ Found {len(listings)} listings for {search_url.split('/')[-2]}")
+        else:
+            print(f"✗ No listings found for {search_url.split('/')[-2]}")
+
+    if all_listings:
+        print(f"\n🎯 Total scraped: {len(all_listings)} listings across all searches")
 
         # Save to both JSON and CSV
-        scraper.save_to_json(listings)
-        scraper.save_to_csv(listings)
+        scraper.save_to_json(all_listings)
+        scraper.save_to_csv(all_listings)
 
         # Show a sample of what was scraped
-        print("\nSample of scraped data:")
-        for i, listing in enumerate(listings[:3]):
-            print(f"{i+1}. {listing['title']} - {listing['price']} - {listing['link']}")
+        print("\n📋 Sample of scraped data:")
+        for i, listing in enumerate(all_listings[:5]):
+            category = "Unknown"
+            title_lower = listing['title'].lower()
+            if 'xbox' in title_lower:
+                category = "Xbox"
+            elif 'playstation' in title_lower or 'ps4' in title_lower or 'ps5' in title_lower:
+                category = "PlayStation"
+            elif 'switch' in title_lower:
+                category = "Switch"
+
+            print(f"{i+1}. [{category}] {listing['title'][:50]}... - {listing['price']}")
     else:
-        print("No listings were scraped. The page structure might have changed.")
+        print("❌ No listings were scraped from any search. The page structure might have changed.")
 
 
 if __name__ == "__main__":
