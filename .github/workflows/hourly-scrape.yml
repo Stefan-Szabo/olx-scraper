@@ -10,6 +10,9 @@ on:
       - 'olx_scraper.py'
       - 'filter_defect_listings.py'
 
+permissions:
+  contents: write  # Allow the workflow to commit and push changes
+
 jobs:
   scrape-and-update:
     runs-on: ubuntu-latest
