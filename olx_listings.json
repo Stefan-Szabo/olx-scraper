@@ -35,13 +35,6 @@
     "link": "https://www.olx.ro/d/oferta/controller-xbox-one-one-s-IDj1VBk.html"
   },
   {
-    "title": "Xbox 360 defect -",
-    "price": "100 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-360-defect-IDk6mPv.html"
-  },
-  {
     "title": "LOT 2x Xbox One S (Disc + All Digital) -  Defect HDMI",
     "price": "300 lei",
     "location": "N/A",
@@ -91,6 +84,13 @@
     "link": "https://www.olx.ro/d/oferta/xbox-one-x-1t-jocuri-IDjZ3yi.html"
   },
   {
+    "title": "Xbox 360S modată",
+    "price": "300 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/xbox-360s-modata-IDk3SNg.html"
+  },
+  {
     "title": "PROMOVAT",
     "price": "300 lei",
     "location": "N/A",
@@ -109,14 +109,7 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-brasov-service-laptopuri-si-calculatoare-brasov-IDiaPHn.html"
-  },
-  {
-    "title": "Xbox 360S modată",
-    "price": "300 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-360s-modata-IDk3SNg.html"
+    "link": "https://www.olx.ro/d/oferta/service-pc-instalare-windows-office-asamblare-it-upgrade-ssd-hdd-IDcdmmi.html"
   },
   {
     "title": "Xbox one s fara problema",
@@ -133,6 +126,20 @@
     "link": "https://www.olx.ro/d/oferta/vand-xbox-one-IDk4V4S.html"
   },
   {
+    "title": "Xbox 360S \"Red Button\"",
+    "price": "100 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/xbox-360s-red-button-IDjTCND.html"
+  },
+  {
+    "title": "Xbox One S - De vanzare",
+    "price": "350 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/xbox-one-s-de-vanzare-IDk3JKX.html"
+  },
+  {
     "title": "Xbox 360 defect lumina rosie",
     "price": "50 lei",
     "location": "N/A",
@@ -147,13 +154,6 @@
     "link": "https://www.olx.ro/d/oferta/xbox-360-folosit-IDk5G1K.html"
   },
   {
-    "title": "Xbox 360S \"Red Button\"",
-    "price": "100 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-360s-red-button-IDjTCND.html"
-  },
-  {
     "title": "Xbox 360 slim si controller",
     "price": "50 lei",
     "location": "N/A",
@@ -161,18 +161,18 @@
     "link": "https://www.olx.ro/d/oferta/xbox-360-slim-si-controller-IDk55eI.html"
   },
   {
-    "title": "Xbox series X excelent",
-    "price": "500 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-series-x-excelent-IDk5psx.html"
-  },
-  {
     "title": "Vând Jocuri Xbox One",
     "price": "50 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/vand-jocuri-xbox-one-IDjZT7m.html"
+  },
+  {
+    "title": "Xbox series X excelent",
+    "price": "500 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/xbox-series-x-excelent-IDk5psx.html"
   },
   {
     "title": "Xbox one 500gb + 9 jocuri",
@@ -186,13 +186,6 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/service-it-reparatii-pc-laptop-ps5-xbox-steamdeck-bucuresti-sector-2-IDjElTm.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/reparatii-service-nintendo-switch-placi-video-controller-ps5-xbox-IDfhhiq.html"
   },
   {
@@ -200,7 +193,14 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/service-pc-instalare-windows-office-asamblare-it-upgrade-ssd-hdd-IDcdmmi.html"
+    "link": "https://www.olx.ro/d/oferta/service-it-reparatii-pc-laptop-ps5-xbox-steamdeck-bucuresti-sector-2-IDjElTm.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-brasov-service-laptopuri-si-calculatoare-brasov-IDiaPHn.html"
   },
   {
     "title": "Xbox One S + 8 Jocuri + 2 controllere",
@@ -210,11 +210,11 @@
     "link": "https://www.olx.ro/d/oferta/xbox-one-s-8-jocuri-2-controllere-IDk5a8G.html"
   },
   {
-    "title": "Xbox One S - De vanzare",
-    "price": "350 lei",
+    "title": "Controllere XBOX Elite Series 2 , Stick Drift , Mici defecte Estetice",
+    "price": "300 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-one-s-de-vanzare-IDk3JKX.html"
+    "link": "https://www.olx.ro/d/oferta/controllere-xbox-elite-series-2-stick-drift-mici-defecte-estetice-IDk40hj.html"
   },
   {
     "title": "Reparatii Controller / Maneta Xbox",
@@ -231,13 +231,6 @@
     "link": "https://www.olx.ro/d/oferta/controller-xbox-fullbox-IDk686H.html"
   },
   {
-    "title": "Controllere XBOX Elite Series 2 , Stick Drift , Mici defecte Estetice",
-    "price": "300 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controllere-xbox-elite-series-2-stick-drift-mici-defecte-estetice-IDk40hj.html"
-  },
-  {
     "title": "Consola XBOX ONE 500 GB + 2 Controllere + Jocuri Bonus",
     "price": "400 lei",
     "location": "N/A",
@@ -252,13 +245,6 @@
     "link": "https://www.olx.ro/d/oferta/3-controllere-xbox-adaptor-bluethooth-bonus-IDjXZGB.html"
   },
   {
-    "title": "Xbox One X 1 Tb plus controlere",
-    "price": "900 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-one-x-1-tb-plus-controlere-IDjUu3H.html"
-  },
-  {
     "title": "Vand Xbox Series S",
     "price": "850 lei",
     "location": "N/A",
@@ -266,11 +252,25 @@
     "link": "https://www.olx.ro/d/oferta/vand-xbox-series-s-IDk3Kt4.html"
   },
   {
+    "title": "Xbox 360 FAT Revizuit Complet – Silențios / Fără Încălzire –Controller",
+    "price": "250 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/xbox-360-fat-revizuit-complet-silentios-fara-incalzire-controller-IDk0wEU.html"
+  },
+  {
     "title": "Xbox series s NOU",
     "price": "920 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/xbox-series-s-nou-IDjdFZh.html"
+  },
+  {
+    "title": "Vand volan xbox 360 si pc",
+    "price": "150 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-volan-xbox-360-si-pc-IDjJDLz.html"
   },
   {
     "title": "PROMOVAT",
@@ -284,21 +284,14 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/instalare-windows-11-10-service-24h-reparatii-laptop-playstation-5-ps4-IDe1THL.html"
+    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-unitati-console-telefoane-tablete-gps-reballing-ID9E2Mp.html"
   },
   {
     "title": "PROMOVAT",
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/service-reparatii-modari-console-xbox-playstation-nintendo-ID3Ktf0.html"
-  },
-  {
-    "title": "Vand volan xbox 360 si pc",
-    "price": "150 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-volan-xbox-360-si-pc-IDjJDLz.html"
+    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps5-playstation-5-sony-xbox-one-series-x-ps4-switch-IDfYRn8.html"
   },
   {
     "title": "Xbox one + 2 manete + fifa 19",
@@ -306,13 +299,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/xbox-one-2-manete-fifa-19-IDk3No3.html"
-  },
-  {
-    "title": "Xbox 360 FAT Revizuit Complet – Silențios / Fără Încălzire –Controller",
-    "price": "250 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-360-fat-revizuit-complet-silentios-fara-incalzire-controller-IDk0wEU.html"
   },
   {
     "title": "Ofer spre vanzare Xbox One",
@@ -343,6 +329,13 @@
     "link": "https://www.olx.ro/d/oferta/pachet-consola-xbox-series-x-1-tb-ssd-in-garantie-IDk4UGq.html"
   },
   {
+    "title": "Xbox One X 1 Tb plus controlere",
+    "price": "900 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/xbox-one-x-1-tb-plus-controlere-IDjUu3H.html"
+  },
+  {
     "title": "SURSA alimentare alimentator incarcator Xbox ONE 17.9A",
     "price": "80 lei",
     "location": "N/A",
@@ -364,32 +357,32 @@
     "link": "https://www.olx.ro/d/oferta/xbox-360-modat-rgh3-IDk42xa.html"
   },
   {
-    "title": "PROMOVAT",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/instalare-windows-11-10-service-24h-reparatii-laptop-playstation-5-ps4-IDe1THL.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-brasov-service-laptopuri-si-calculatoare-brasov-IDiaPHn.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps5-playstation-5-sony-xbox-one-series-x-ps4-switch-IDfYRn8.html"
-  },
-  {
     "title": "Xbox 360 JTAG + 170+ jocuri + HDD 120GB + manetă",
     "price": "150 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/xbox-360-jtag-170-jocuri-hdd-120gb-maneta-IDk4gEY.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps4-ps5-xbox-one-x-playstation-4-controller-console-IDczbEk.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/service-reparatii-modari-console-xbox-playstation-nintendo-ID3Ktf0.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-unitati-console-telefoane-tablete-gps-reballing-ID9E2Mp.html"
   },
   {
     "title": "Controller joystyck xbox + baterie Myria",
@@ -406,18 +399,18 @@
     "link": "https://www.olx.ro/d/oferta/controller-powera-pc-xbox-lb-defect-IDk485I.html"
   },
   {
-    "title": "Vand Xbox series X 1T + controller",
-    "price": "600 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-xbox-series-x-1t-controller-IDjXS2W.html"
-  },
-  {
-    "title": "Controller Xbox One S/X",
+    "title": "Controller Xbox Series Negru",
     "price": "149 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controller-xbox-one-s-x-IDk6oAL.html"
+    "link": "https://www.olx.ro/d/oferta/controller-xbox-series-negru-IDk5C5R.html"
+  },
+  {
+    "title": "controller xbox one (series)",
+    "price": "150 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/controller-xbox-one-series-IDjPVSS.html"
   },
   {
     "title": "Reparație console. Reparatie Playstation. Reparatii Xbox, Nintendo",
@@ -425,13 +418,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/reparatie-console-reparatie-playstation-reparatii-xbox-nintendo-IDiOSAV.html"
-  },
-  {
-    "title": "Reparații electronice,electrocasnice,electronist, atelier, service,",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-electronice-electrocasnice-electronist-atelier-service-IDaKHPz.html"
   },
   {
     "title": "Xbox one s Defect",
@@ -453,6 +439,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/joc-arcade-mortal-kombat-x-supreme-IDjTZAY.html"
+  },
+  {
+    "title": "Controller Xbox One S/X",
+    "price": "149 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/controller-xbox-one-s-x-IDk6oAL.html"
   },
   {
     "title": "Forza Horizont 4 Xbox One",
@@ -481,13 +474,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/xbox-series-s-4k-120-fps-dock-2-controllere-cutie-IDk3moe.html"
-  },
-  {
-    "title": "controller xbox one (series)",
-    "price": "150 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controller-xbox-one-series-IDjPVSS.html"
   },
   {
     "title": "Reparatii Service Ps4 Ps5 Xbox One X Playstation 4 Controller Console",
@@ -623,6 +609,13 @@
     "link": "https://www.olx.ro/d/oferta/camera-kinect-xbox-360-IDjV7wB.html"
   },
   {
+    "title": "Vand Colectie 14 Jocuri Xbox One",
+    "price": "800 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-colectie-14-jocuri-xbox-one-IDk50aF.html"
+  },
+  {
     "title": "Consola Microsoft Xbox One X, 1TB SSD",
     "price": "800 lei",
     "location": "N/A",
@@ -679,6 +672,13 @@
     "link": "https://www.olx.ro/d/oferta/defect-repar-tot-pc-laptopuri-console-masini-de-spalat-orice-IDjBfDL.html"
   },
   {
+    "title": "Vând jocuri de Xbox 360",
+    "price": "36050 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-jocuri-de-xbox-360-IDk6ifd.html"
+  },
+  {
     "title": "Piese Samsung A33-5G",
     "price": "40 lei",
     "location": "N/A",
@@ -691,13 +691,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/sursa-xbox-series-x-IDk59v9.html"
-  },
-  {
-    "title": "Controller Xbox Series TMR GuliKit",
-    "price": "300 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controller-xbox-series-tmr-gulikit-IDk6jJm.html"
   },
   {
     "title": "Vând căști gaming iluminate și cu vibrație  la un preț foarte bun",
@@ -735,6 +728,13 @@
     "link": "https://www.olx.ro/d/oferta/monitor-curbat-samsung-81-cm-IDk4JEs.html"
   },
   {
+    "title": "Controller Xbox Series TMR GuliKit",
+    "price": "300 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/controller-xbox-series-tmr-gulikit-IDk6jJm.html"
+  },
+  {
     "title": "Cyberpunk 2077 xbox",
     "price": "150 lei",
     "location": "N/A",
@@ -747,13 +747,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/controler-xbox-alb-si-negru-stare-perfefta-IDjZ7oD.html"
-  },
-  {
-    "title": "Vând jocuri de Xbox 360",
-    "price": "36050 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-jocuri-de-xbox-360-IDk6ifd.html"
   },
   {
     "title": "Xbox 360 Slim – Curățare Profesională + Pastă Termică Nouă- Impecabil",
@@ -770,25 +763,18 @@
     "link": "https://www.olx.ro/d/oferta/manete-pentru-xbox-series-x-s-impecabile-fara-urme-de-uzura-IDj5pYc.html"
   },
   {
-    "title": "XBOX One S 1TB - ca nou -",
-    "price": "100 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/xbox-one-s-1tb-ca-nou-IDjH3uQ.html"
-  },
-  {
-    "title": "Vand Colectie 14 Jocuri Xbox One",
-    "price": "800 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-colectie-14-jocuri-xbox-one-IDk50aF.html"
-  },
-  {
     "title": "Joc Call of Duty Black Ops - Xbox 360",
     "price": "36040 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/joc-call-of-duty-black-ops-xbox-360-IDk2DBg.html"
+  },
+  {
+    "title": "Reparații electronice,electrocasnice,electronist, atelier, service,",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/reparatii-electronice-electrocasnice-electronist-atelier-service-IDaKHPz.html"
   },
   {
     "title": "Xbox Series X Bundle si ps5 slim",
@@ -852,13 +838,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playseat-challenge-actifit-racing-negru-logitech-driving-force-g920-IDk0pGq.html"
-  },
-  {
-    "title": "Controller Xbox Series Negru",
-    "price": "149 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controller-xbox-series-negru-IDk5C5R.html"
   },
   {
     "title": "Curatare/reparare și înlocuire pasta termica PS4/slim/pro/PS5/XBOX",
@@ -966,6 +945,13 @@
     "link": "https://www.olx.ro/d/oferta/reparatii-service-reballing-console-ps5-ps4-ps3-xbox-switch-IDbIvVo.html"
   },
   {
+    "title": "XBOX One S 1TB - ca nou -",
+    "price": "100 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/xbox-one-s-1tb-ca-nou-IDjH3uQ.html"
+  },
+  {
     "title": "Volan gaming  superdrive gs 950-X",
     "price": "700 lei",
     "location": "N/A",
@@ -973,11 +959,11 @@
     "link": "https://www.olx.ro/d/oferta/volan-gaming-superdrive-gs-950-x-IDjZZfX.html"
   },
   {
-    "title": "Volan Xbox Hori compatibil cu Pc",
-    "price": "200 lei",
+    "title": "Reparatii  Service laptop, macbook, PS4, PS5, XBOX, inst. windows",
+    "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/volan-xbox-hori-compatibil-cu-pc-IDjj1Qy.html"
+    "link": "https://www.olx.ro/d/oferta/reparatii-service-laptop-macbook-ps4-ps5-xbox-inst-windows-IDfznKU.html"
   },
   {
     "title": "Xbox series s 512gb",
@@ -992,6 +978,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/vand-volan-tmx-pro-schimbator-th8a-IDjXN9R.html"
+  },
+  {
+    "title": "Volan Xbox Hori compatibil cu Pc",
+    "price": "200 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/volan-xbox-hori-compatibil-cu-pc-IDjj1Qy.html"
   },
   {
     "title": "Reparatii/curatare PS4/PS5/XBOX (Playstation, Xbox)",
@@ -1078,18 +1071,18 @@
     "link": "https://www.olx.ro/d/oferta/vand-controller-de-ps4-intr-o-stare-buna-urgent-IDk5Oir.html"
   },
   {
-    "title": "Vand/schimb Trotineta electrica Xiaomi Mi 1S",
-    "price": "750 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-schimb-trotineta-electrica-xiaomi-mi-1s-IDk4RP0.html"
-  },
-  {
     "title": "Reparatii Laptop, PS5, PS4, MacBook, Xbox",
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/reparatii-laptop-ps5-ps4-macbook-xbox-IDjbxKx.html"
+  },
+  {
+    "title": "Vand/schimb Trotineta electrica Xiaomi Mi 1S",
+    "price": "750 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-schimb-trotineta-electrica-xiaomi-mi-1s-IDk4RP0.html"
   },
   {
     "title": "Vand/schimb xbox one s cu logitech g29/g923",
@@ -1120,13 +1113,6 @@
     "link": "https://www.olx.ro/d/oferta/casti-astro-a50-gen4-IDjqf7z.html"
   },
   {
-    "title": "Reparatii  Service laptop, macbook, PS4, PS5, XBOX, inst. windows",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-service-laptop-macbook-ps4-ps5-xbox-inst-windows-IDfznKU.html"
-  },
-  {
     "title": "Sursa Xbox One X NOUĂ + garantie 2 ANI",
     "price": "150 lei",
     "location": "N/A",
@@ -1141,18 +1127,18 @@
     "link": "https://www.olx.ro/d/oferta/leptop-hp-i5-ca-si-nou-IDk0xwj.html"
   },
   {
-    "title": "Kinect senzor xbox 360 + joc Adventures",
-    "price": "120 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/kinect-senzor-xbox-360-joc-adventures-IDhosBr.html"
-  },
-  {
     "title": "Vand lot console",
     "price": "120 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/vand-lot-console-IDjXNKs.html"
+  },
+  {
+    "title": "Kinect senzor xbox 360 + joc Adventures",
+    "price": "120 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/kinect-senzor-xbox-360-joc-adventures-IDhosBr.html"
   },
   {
     "title": "Thrustmaster eSwap xR Pro ForzaHorizon edition",
@@ -1330,13 +1316,6 @@
     "link": "https://www.olx.ro/d/oferta/service-it-reparatii-pc-laptop-ps5-xbox-steamdeck-bucuresti-sector-2-IDjElTm.html"
   },
   {
-    "title": "Volan de gaming xbox/ps4/pc",
-    "price": "350 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/volan-de-gaming-xbox-ps4-pc-IDjv1vL.html"
-  },
-  {
     "title": "Reparatii PC | Laptop | Instalare Windows | Router | PS4 PS5 XBox",
     "price": "N/A",
     "location": "N/A",
@@ -1351,6 +1330,13 @@
     "link": "https://www.olx.ro/d/oferta/servicii-de-mentenanta-reparatii-console-IDk3OTd.html"
   },
   {
+    "title": "Service reparații electronice, electrocasnice, electronist",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/service-reparatii-electronice-electrocasnice-electronist-IDgYqQn.html"
+  },
+  {
     "title": "Curatare praf inlocuire pasta procesor laptop pc console PS3 PS4 Xbox",
     "price": "N/A",
     "location": "N/A",
@@ -1358,18 +1344,18 @@
     "link": "https://www.olx.ro/d/oferta/curatare-praf-inlocuire-pasta-procesor-laptop-pc-console-ps3-ps4-xbox-IDjfKUH.html"
   },
   {
+    "title": "Volan de gaming xbox/ps4/pc",
+    "price": "350 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/volan-de-gaming-xbox-ps4-pc-IDjv1vL.html"
+  },
+  {
     "title": "Volan myria 7400mg",
     "price": "300 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/volan-myria-7400mg-IDjYrVb.html"
-  },
-  {
-    "title": "Service reparații electronice, electrocasnice, electronist",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/service-reparatii-electronice-electrocasnice-electronist-IDgYqQn.html"
   },
   {
     "title": "Monitor MSI 322UPF",
@@ -1505,25 +1491,39 @@
     "link": "https://www.olx.ro/d/oferta/tom-clancy-s-the-division-xbox-IDk1Pan.html"
   },
   {
-    "title": "PROMOVAT",
-    "price": "900 lei",
+    "title": "Reparatii Laptop/Calculatoare/Console Ps Xbox/Windows/Mac/Programe",
+    "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps5-2-controlere-IDk5rVP.html"
+    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-calculatoare-console-ps-xbox-windows-mac-programe-IDjTQBc.html"
+  },
+  {
+    "title": "Service IT autorizat -Instalare Windows, reparatii laptop, PC, console",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/service-it-autorizat-instalare-windows-reparatii-laptop-pc-console-IDgXG5h.html"
   },
   {
     "title": "PROMOVAT",
-    "price": "899 lei",
+    "price": "000 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps4-slim-fc-26-gta-v-minecraft-consola-stare-excelenta-IDk3cxh.html"
+    "link": "https://www.olx.ro/d/oferta/playstation-5-cu-disk-impecabil-accept-schimb-cu-ps-4-playstation-4-IDhkgYh.html"
   },
   {
     "title": "PROMOVAT",
-    "price": "950 lei",
+    "price": "650 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-4-pro-ultimu-model-aparut-garantie-30-zile-ps-4-4k-IDeavPV.html"
+    "link": "https://www.olx.ro/d/oferta/playstation-4-impecabil-500-gb-garantie-30-zile-joc-cadou-IDjWNbB.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "80 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/joc-gta-5-pentr-playstation-4-ps5-fgames-ro-IDjW38J.html"
   },
   {
     "title": "PlayStation 3 defect",
@@ -1533,18 +1533,18 @@
     "link": "https://www.olx.ro/d/oferta/playstation-3-defect-IDk6dPO.html"
   },
   {
-    "title": "PS3 Playstation 3 defect de piese sau de reparat",
-    "price": "100 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps3-playstation-3-defect-de-piese-sau-de-reparat-IDjRCTq.html"
-  },
-  {
     "title": "Defect PlayStation 3 \\ PS3 Phat CECHG04",
     "price": "0460 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/defect-playstation-3-ps3-phat-cechg04-IDk6nNa.html"
+  },
+  {
+    "title": "PS3 Playstation 3 defect de piese sau de reparat",
+    "price": "100 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps3-playstation-3-defect-de-piese-sau-de-reparat-IDjRCTq.html"
   },
   {
     "title": "ps4 defect,doar placa de baza este stricata și se poate schimba",
@@ -1582,39 +1582,11 @@
     "link": "https://www.olx.ro/d/oferta/ps4-utilizat-cu-2-manete-una-este-defecta-plus-incarcator-de-manete-IDk57kq.html"
   },
   {
-    "title": "Consola PS4 (Playstation 4) + 2 Controllere +Jocuri Bonus",
-    "price": "499,99 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/consola-ps4-playstation-4-2-controllere-jocuri-bonus-IDk2tEY.html"
-  },
-  {
     "title": "Playstation VR2 de vanzare",
     "price": "250 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-vr2-de-vanzare-IDk3UjR.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "850 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-4-slim-IDk3KpI.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "80 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/joc-ps5-playstation-5-fgames-IDjWQRR.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "650 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-4-impecabil-500-gb-garantie-30-zile-joc-cadou-IDjWNbB.html"
   },
   {
     "title": "PS4-slim de vanzare",
@@ -1624,74 +1596,11 @@
     "link": "https://www.olx.ro/d/oferta/ps4-slim-de-vanzare-IDk50sf.html"
   },
   {
-    "title": "vand ps4 slim CD room defect (jocurile separat)",
-    "price": "500 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-ps4-slim-cd-room-defect-jocurile-separat-IDk2rYT.html"
-  },
-  {
-    "title": "Sony Playstation 3 DEFECT pt piese (sursa, Blu-Ray carcasa)",
-    "price": "70 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/sony-playstation-3-defect-pt-piese-sursa-blu-ray-carcasa-IDk1jhy.html"
-  },
-  {
-    "title": "Consola PS4 ( Playstation 4) 500 GB + 2 Controllere + Jocuri Bonus",
-    "price": "529,99 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/consola-ps4-playstation-4-500-gb-2-controllere-jocuri-bonus-IDk2tH3.html"
-  },
-  {
-    "title": "Ps 4 pro 1 tb foarte bun",
-    "price": "650 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps-4-pro-1-tb-foarte-bun-IDk0AQN.html"
-  },
-  {
-    "title": "PS Portal – Stare Impecabilă",
-    "price": "700 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps-portal-stare-impecabila-IDjSP3k.html"
-  },
-  {
-    "title": "Playstation 3 defect",
-    "price": "100 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-3-defect-IDk3xbs.html"
-  },
-  {
-    "title": "Ultimate ears megaboom",
-    "price": "300 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ultimate-ears-megaboom-IDjw1Db.html"
-  },
-  {
-    "title": "PS5 - PlayStation 5 Slim +30 jocuri",
-    "price": "800 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps5-playstation-5-slim-30-jocuri-IDjsEt8.html"
-  },
-  {
-    "title": "PlayStation Slim 1T",
-    "price": "700 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-slim-1t-IDk3DVQ.html"
-  },
-  {
     "title": "PROMOVAT",
-    "price": "80 lei",
+    "price": "950 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/joc-gta-5-pentr-playstation-4-ps5-fgames-ro-IDjW38J.html"
+    "link": "https://www.olx.ro/d/oferta/playstation-4-pro-ultimu-model-aparut-garantie-30-zile-ps-4-4k-IDeavPV.html"
   },
   {
     "title": "PROMOVAT",
@@ -1708,6 +1617,90 @@
     "link": "https://www.olx.ro/d/oferta/ps-portal-stare-impecabila-IDjSP3k.html"
   },
   {
+    "title": "vand ps4 slim CD room defect (jocurile separat)",
+    "price": "500 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-ps4-slim-cd-room-defect-jocurile-separat-IDk2rYT.html"
+  },
+  {
+    "title": "Sony Playstation 3 DEFECT pt piese (sursa, Blu-Ray carcasa)",
+    "price": "70 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/sony-playstation-3-defect-pt-piese-sursa-blu-ray-carcasa-IDk1jhy.html"
+  },
+  {
+    "title": "Consola PS4 (Playstation 4) + 2 Controllere +Jocuri Bonus",
+    "price": "499,99 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/consola-ps4-playstation-4-2-controllere-jocuri-bonus-IDk2tEY.html"
+  },
+  {
+    "title": "Consola PS4 ( Playstation 4) 500 GB + 2 Controllere + Jocuri Bonus",
+    "price": "529,99 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/consola-ps4-playstation-4-500-gb-2-controllere-jocuri-bonus-IDk2tH3.html"
+  },
+  {
+    "title": "Ps 4 pro 1 tb foarte bun",
+    "price": "650 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps-4-pro-1-tb-foarte-bun-IDk0AQN.html"
+  },
+  {
+    "title": "Playstation 3 defect",
+    "price": "100 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-3-defect-IDk3xbs.html"
+  },
+  {
+    "title": "PS5 - PlayStation 5 Slim +30 jocuri",
+    "price": "800 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps5-playstation-5-slim-30-jocuri-IDjsEt8.html"
+  },
+  {
+    "title": "Ultimate ears megaboom",
+    "price": "300 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ultimate-ears-megaboom-IDjw1Db.html"
+  },
+  {
+    "title": "Playstation 5 cd edition",
+    "price": "500 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-5-cd-edition-IDk5dFI.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "80 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/joc-ps5-playstation-5-fgames-IDjWQRR.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "899 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps4-slim-fc-26-gta-v-minecraft-consola-stare-excelenta-IDk3cxh.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "850 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-4-slim-IDk3KpI.html"
+  },
+  {
     "title": "Playstation 2 (Fat, nu slim) cu Card Mcboot/Joystick",
     "price": "199 lei",
     "location": "N/A",
@@ -1722,11 +1715,25 @@
     "link": "https://www.olx.ro/d/oferta/playstation-3-ps3-fat-de-piese-defect-IDhe6KU.html"
   },
   {
+    "title": "PlayStation Slim 1T",
+    "price": "700 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-slim-1t-IDk3DVQ.html"
+  },
+  {
     "title": "PlayStation 4 Slim 1TB cu cutie + 3 jocuri și căști MarsGaming",
     "price": "890 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-4-slim-1tb-cu-cutie-3-jocuri-si-casti-marsgaming-IDjZxhZ.html"
+  },
+  {
+    "title": "Playstation 4 (ps4) pret fix",
+    "price": "480 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-pret-fix-IDk50ef.html"
   },
   {
     "title": "ps 5  + fc 25 cu 2 manete costom",
@@ -1757,25 +1764,11 @@
     "link": "https://www.olx.ro/d/oferta/playstation-4-slim-IDk32yf.html"
   },
   {
-    "title": "Ps 5 slim disc vând/schimb",
-    "price": "900 lei",
+    "title": "Playstation 2 cu defect",
+    "price": "200 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps-5-slim-disc-vand-schimb-IDk4KZQ.html"
-  },
-  {
-    "title": "Playstation 5 cd edition",
-    "price": "500 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-5-cd-edition-IDk5dFI.html"
-  },
-  {
-    "title": "Playstation 4 (ps4) pret fix",
-    "price": "480 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-pret-fix-IDk50ef.html"
+    "link": "https://www.olx.ro/d/oferta/playstation-2-cu-defect-IDjGEuL.html"
   },
   {
     "title": "PROMOVAT",
@@ -1786,24 +1779,17 @@
   },
   {
     "title": "PROMOVAT",
-    "price": "000 lei",
+    "price": "900 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-5-cu-disk-impecabil-accept-schimb-cu-ps-4-playstation-4-IDhkgYh.html"
+    "link": "https://www.olx.ro/d/oferta/ps5-2-controlere-IDk5rVP.html"
   },
   {
     "title": "PROMOVAT",
-    "price": "249 lei",
+    "price": "139 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/maneta-controller-playstation-5-ps5-fgames-IDjWQOu.html"
-  },
-  {
-    "title": "Playstation 2 cu defect",
-    "price": "200 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-2-cu-defect-IDjGEuL.html"
+    "link": "https://www.olx.ro/d/oferta/maneta-controller-playstation-4-ps4-fgames-IDjWQXJ.html"
   },
   {
     "title": "PlayStation 2 PS2",
@@ -1820,11 +1806,25 @@
     "link": "https://www.olx.ro/d/oferta/playstation-2-jocuri-IDk4ILk.html"
   },
   {
+    "title": "Ps 5 slim disc vând/schimb",
+    "price": "900 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps-5-slim-disc-vand-schimb-IDk4KZQ.html"
+  },
+  {
     "title": "Kukirin g2 master custom 2025",
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/kukirin-g2-master-custom-2025-IDk42UZ.html"
+  },
+  {
+    "title": "Playstation 4 – 500GB + 4 Controllere+Stație Încărcare–Stare Excelentă",
+    "price": "899 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-4-500gb-4-controllere-statie-incarcarestare-excelenta-IDk0Hm2.html"
   },
   {
     "title": "PlayStation 4 impecabil – 500 GB – Garanție 30 zile + joc cadou",
@@ -1841,11 +1841,46 @@
     "link": "https://www.olx.ro/d/oferta/playstation-2-pentru-piese-IDk3G3a.html"
   },
   {
+    "title": "Vand Sony Playstation VR2, PSVR2, Resident Evil Village",
+    "price": "300 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-sony-playstation-vr2-psvr2-resident-evil-village-IDk6jf8.html"
+  },
+  {
     "title": "MacBook Pro 16’’ 2019 16 GB RAM 500GB Memorie",
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/macbook-pro-16-2019-16-gb-ram-500gb-memorie-IDk3fes.html"
+  },
+  {
+    "title": "Jocuri pentru Ps5",
+    "price": "5500 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/jocuri-pentru-ps5-IDk5gyr.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "150 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/controller-playstation-5-ps5-dualsense-fara-stickdrift-cu-garantie-IDjTBF0.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "800 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps5-playstation-5-slim-30-jocuri-IDjsEt8.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "400 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/volan-ps-si-pc-plus-schimbator-IDk01BM.html"
   },
   {
     "title": "Bluray Drive (BD-400 si BD-410) pentru orice PlayStation 3 (PS3) Phat",
@@ -1867,27 +1902,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-5-varianta-cu-disc-IDk3zhl.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "400 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/volan-ps-si-pc-plus-schimbator-IDk01BM.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "260 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/casti-epos-gtw-270-hybrid-in-ear-wireless-dongle-low-latency-IDk2OG9.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "899 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-4-500gb-4-controllere-statie-incarcarestare-excelenta-IDk0Hm2.html"
   },
   {
     "title": "Playstation 4 Pro 1TB Firmware 10.52 Modat",
@@ -1932,13 +1946,6 @@
     "link": "https://www.olx.ro/d/oferta/vand-ps4-fara-nicio-problema-IDk4egi.html"
   },
   {
-    "title": "Jocuri pentru Ps5",
-    "price": "5500 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/jocuri-pentru-ps5-IDk5gyr.html"
-  },
-  {
     "title": "PC Gaming Ryzen 5 3500x + RTX 2060",
     "price": "800 lei",
     "location": "N/A",
@@ -1946,32 +1953,32 @@
     "link": "https://www.olx.ro/d/oferta/pc-gaming-ryzen-5-3500x-rtx-2060-IDk3pkJ.html"
   },
   {
+    "title": "PROMOVAT",
+    "price": "400 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/casti-steelseries-arctis-nova-7-wireless-IDk3YqE.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "200 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/controller-ps-5-impecabile-fara-urme-dr-uzura-manete-ps-5-playstation-IDiJU6i.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "149 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/controler-joystick-ps4-IDk3Y5d.html"
+  },
+  {
     "title": "Joc GTA 5 pentr PlayStation 4 / PS5 | Fgames.ro",
     "price": "80 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/joc-gta-5-pentr-playstation-4-ps5-fgames-ro-IDjW38J.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "5250 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controller-maneta-ps5-playstation-5-IDjUfmX.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "150 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controller-playstation-5-ps5-dualsense-fara-stickdrift-cu-garantie-IDjTBF0.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "800 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps5-playstation-5-slim-30-jocuri-IDjsEt8.html"
   },
   {
     "title": "PlayStation 3 Ps3 slim si Xbox 360 slim cu defecte",
@@ -1986,13 +1993,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-slim-cu-pachet-de-10-jocuri-IDk3Jgl.html"
-  },
-  {
-    "title": "Vand Sony Playstation VR2, PSVR2, Resident Evil Village",
-    "price": "300 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-sony-playstation-vr2-psvr2-resident-evil-village-IDk6jf8.html"
   },
   {
     "title": "Sony PlayStation",
@@ -2030,41 +2030,6 @@
     "link": "https://www.olx.ro/d/oferta/maneta-controller-playstation-5-fara-drift-ps5-dualsense-IDjSCbC.html"
   },
   {
-    "title": "Vând PlayStation 4 + jocuri și accesorii",
-    "price": "900 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-playstation-4-jocuri-si-accesorii-IDjXXNA.html"
-  },
-  {
-    "title": "Joc PS5 PlayStation 5 | Fgames",
-    "price": "80 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/joc-ps5-playstation-5-fgames-IDjWQRR.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "400 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/casti-steelseries-arctis-nova-7-wireless-IDk3YqE.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "140 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/maneta-controller-ps4-playstation-4-fgames-IDicTtR.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "200 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controller-ps-5-impecabile-fara-urme-dr-uzura-manete-ps-5-playstation-IDiJU6i.html"
-  },
-  {
     "title": "Controller PlayStation 4",
     "price": "4100 lei",
     "location": "N/A",
@@ -2079,6 +2044,27 @@
     "link": "https://www.olx.ro/d/oferta/controller-maneta-ps5-playstation-5-IDjUfmX.html"
   },
   {
+    "title": "PROMOVAT",
+    "price": "260 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/casti-epos-gtw-270-hybrid-in-ear-wireless-dongle-low-latency-IDk2OG9.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "5250 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/controller-maneta-ps5-playstation-5-IDjUfmX.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "249 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/maneta-controller-playstation-5-ps5-fgames-IDjWQOu.html"
+  },
+  {
     "title": "Controller wireless PlayStation 5 DualSense Alb poze reale functional",
     "price": "249 lei",
     "location": "N/A",
@@ -2091,6 +2077,20 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-slim-1tb-jocuri-accesorii-pachet-complet-IDjWARD.html"
+  },
+  {
+    "title": "Vând PlayStation 4 + jocuri și accesorii",
+    "price": "900 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-playstation-4-jocuri-si-accesorii-IDjXXNA.html"
+  },
+  {
+    "title": "PS4 PRO, 3 controllere + FIFA 22",
+    "price": "22900 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps4-pro-3-controllere-fifa-22-IDk3hJt.html"
   },
   {
     "title": "Controller PlayStation 5 PS5 dualsense fara stickdrift cu garantie",
@@ -2128,32 +2128,25 @@
     "link": "https://www.olx.ro/d/oferta/ps5-disc-edition-IDk3vfM.html"
   },
   {
-    "title": "Maneta Controller PlayStation 5, PS5 | Fgames",
-    "price": "249 lei",
+    "title": "PROMOVAT",
+    "price": "140 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/maneta-controller-playstation-5-ps5-fgames-IDjWQOu.html"
+    "link": "https://www.olx.ro/d/oferta/maneta-controller-ps4-playstation-4-fgames-IDicTtR.html"
   },
   {
     "title": "PROMOVAT",
-    "price": "149 lei",
+    "price": "899 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/controler-joystick-ps4-IDk3Y5d.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "139 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/maneta-controller-playstation-4-ps4-fgames-IDjWQXJ.html"
+    "link": "https://www.olx.ro/d/oferta/playstation-4-500gb-4-controllere-statie-incarcarestare-excelenta-IDk0Hm2.html"
   },
   {
     "title": "PROMOVAT",
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps4-ps5-xbox-one-x-playstation-4-controller-console-IDczbEk.html"
+    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps5-playstation-5-sony-xbox-one-series-x-ps4-switch-IDfYRn8.html"
   },
   {
     "title": "Vand pachet de jocuri pentru ps 4",
@@ -2168,6 +2161,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/ps3-cu-13-jocuri-plus-maneta-IDjY8L9.html"
+  },
+  {
+    "title": "Joc PS5 PlayStation 5 | Fgames",
+    "price": "80 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/joc-ps5-playstation-5-fgames-IDjWQRR.html"
   },
   {
     "title": "Căști SteelSeries Arctis Nova 7 Wireless",
@@ -2191,6 +2191,13 @@
     "link": "https://www.olx.ro/d/oferta/schimb-laptop-playstaion-5-disc-defect-2000-de-lei-IDk0Hn4.html"
   },
   {
+    "title": "Casti HyperX  Cloud",
+    "price": "120 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/casti-hyperx-cloud-IDjDYkT.html"
+  },
+  {
     "title": "Vând playstation 5",
     "price": "850 lei",
     "location": "N/A",
@@ -2212,13 +2219,6 @@
     "link": "https://www.olx.ro/d/oferta/maneta-playstation-5-ps-5-controler-playstation-5-impecabile-IDjnsjG.html"
   },
   {
-    "title": "[PS4] Vând manetă/manete/controllere/joystick ORIGINALE PlayStation 4",
-    "price": "499 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps4-vand-maneta-manete-controllere-joystick-originale-playstation-4-IDjQdzv.html"
-  },
-  {
     "title": "PROMOVAT",
     "price": "N/A",
     "location": "N/A",
@@ -2237,7 +2237,7 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/instalare-windows-11-10-service-24h-reparatii-laptop-playstation-5-ps4-IDe1THL.html"
+    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-brasov-service-laptopuri-si-calculatoare-brasov-IDiaPHn.html"
   },
   {
     "title": "SONY PlayStation 5 Digital ps5 ca Nou Impecabill Poze Reale + Maneta",
@@ -2282,13 +2282,6 @@
     "link": "https://www.olx.ro/d/oferta/playstation-4-controler-IDk0I53.html"
   },
   {
-    "title": "Casti HyperX  Cloud",
-    "price": "120 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/casti-hyperx-cloud-IDjDYkT.html"
-  },
-  {
     "title": "PS 4 cu 2 jocuri și un controler",
     "price": "500 lei",
     "location": "N/A",
@@ -2310,6 +2303,13 @@
     "link": "https://www.olx.ro/d/oferta/vand-fifa-14-pentru-playstation-4-IDk15Eb.html"
   },
   {
+    "title": "PlayStation 4 (PS4) Fat 1TB + 2 controllere – stare bună",
+    "price": "800 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-fat-1tb-2-controllere-stare-buna-IDk3ZpX.html"
+  },
+  {
     "title": "PROMOVAT",
     "price": "N/A",
     "location": "N/A",
@@ -2321,7 +2321,7 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-laptop-brasov-service-laptopuri-si-calculatoare-brasov-IDiaPHn.html"
+    "link": "https://www.olx.ro/d/oferta/instalare-windows-11-10-service-24h-reparatii-laptop-playstation-5-ps4-IDe1THL.html"
   },
   {
     "title": "PROMOVAT",
@@ -2331,32 +2331,11 @@
     "link": "https://www.olx.ro/d/oferta/service-pc-instalare-windows-office-asamblare-it-upgrade-ssd-hdd-IDcdmmi.html"
   },
   {
-    "title": "Vând consolă PS3 Slim modat cu jocuri gata instalate",
-    "price": "580 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/vand-consola-ps3-slim-modat-cu-jocuri-gata-instalate-IDk6lvE.html"
-  },
-  {
-    "title": "PlayStation 4 (PS4) Fat 1TB + 2 controllere – stare bună",
-    "price": "800 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-fat-1tb-2-controllere-stare-buna-IDk3ZpX.html"
-  },
-  {
     "title": "PS4 PRO, 3 controllere + FIFA 22",
     "price": "22900 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/ps4-pro-3-controllere-fifa-22-IDk3hJt.html"
-  },
-  {
-    "title": "PlayStation VR CUH-ZVR2 complet + controllere Move + cameră + adaptor",
-    "price": "850 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-vr-cuh-zvr2-complet-controllere-move-camera-adaptor-IDk5Ho4.html"
   },
   {
     "title": "Jocuri playstation 4",
@@ -2380,6 +2359,13 @@
     "link": "https://www.olx.ro/d/oferta/intretinere-si-reparatii-calculatoare-jocuri-video-si-alte-electronice-IDjiEf6.html"
   },
   {
+    "title": "PlayStation VR CUH-ZVR2 complet + controllere Move + cameră + adaptor",
+    "price": "850 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/playstation-vr-cuh-zvr2-complet-controllere-move-camera-adaptor-IDk5Ho4.html"
+  },
+  {
     "title": "PS5 Slim - De vanzare - Aproape Nou",
     "price": "800 lei",
     "location": "N/A",
@@ -2387,25 +2373,11 @@
     "link": "https://www.olx.ro/d/oferta/ps5-slim-de-vanzare-aproape-nou-IDk3VBC.html"
   },
   {
-    "title": "PS Portal Editie Aniversara",
-    "price": "580 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps-portal-editie-aniversara-IDjYrgc.html"
-  },
-  {
     "title": "PlayStation 3 Slim Cu jocuri",
     "price": "325 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-3-slim-cu-jocuri-IDk6h8g.html"
-  },
-  {
-    "title": "PROMOVAT",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps5-playstation-5-sony-xbox-one-series-x-ps4-switch-IDfYRn8.html"
   },
   {
     "title": "Vand playstation 4 VR",
@@ -2420,6 +2392,20 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/vand-ps-3-defect-IDk1R2K.html"
+  },
+  {
+    "title": "Vând consolă PS3 Slim modat cu jocuri gata instalate",
+    "price": "580 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-consola-ps3-slim-modat-cu-jocuri-gata-instalate-IDk6lvE.html"
+  },
+  {
+    "title": "PROMOVAT",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps4-ps5-xbox-one-x-playstation-4-controller-console-IDczbEk.html"
   },
   {
     "title": "Playstation 5 Digital Edition",
@@ -2513,6 +2499,20 @@
     "link": "https://www.olx.ro/d/oferta/playstation5-impecabil-IDk0HHQ.html"
   },
   {
+    "title": "Reparatii Service Ps4 Ps5 Xbox One X Playstation 4 Controller Console",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps4-ps5-xbox-one-x-playstation-4-controller-console-IDczbEk.html"
+  },
+  {
+    "title": "PS Portal Editie Aniversara",
+    "price": "580 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps-portal-editie-aniversara-IDjYrgc.html"
+  },
+  {
     "title": "PlayStation 5 Slim Digital Edition Pachet Fortnite Ca nou, cu garanție",
     "price": "100 lei",
     "location": "N/A",
@@ -2546,6 +2546,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-portal-stare-impecabil-de-nou-IDjZeCB.html"
+  },
+  {
+    "title": "PS4 Slim - FC 26 GTA V Minecraft Consola  Stare Excelenta",
+    "price": "899 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps4-slim-fc-26-gta-v-minecraft-consola-stare-excelenta-IDk3cxh.html"
   },
   {
     "title": "Playstation 4/PS4 slim 1tb ,2 controllere",
@@ -2674,6 +2681,13 @@
     "link": "https://www.olx.ro/d/oferta/playstation-4-slim-IDk3KpI.html"
   },
   {
+    "title": "PS5 Digital, Garantie 1 an",
+    "price": "800 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/ps5-digital-garantie-1-an-IDk6lZw.html"
+  },
+  {
     "title": "Volan hori ps4/pc defect",
     "price": "150 lei",
     "location": "N/A",
@@ -2793,18 +2807,18 @@
     "link": "https://www.olx.ro/d/oferta/ochelari-vr2-playstation-5-ps5-set-complet-cu-manete-fgames-IDjUBuq.html"
   },
   {
+    "title": "Vând PlasyStation 4 PRO 1TB",
+    "price": "000 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-plasystation-4-pro-1tb-IDk4Vet.html"
+  },
+  {
     "title": "SURSA PS5 Playstation 5",
     "price": "5325 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/sursa-ps5-playstation-5-IDhOWsy.html"
-  },
-  {
-    "title": "PS5 Digital, Garantie 1 an",
-    "price": "800 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps5-digital-garantie-1-an-IDk6lZw.html"
   },
   {
     "title": "Fifa 23 pentru PS5",
@@ -2819,13 +2833,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-4-slim-1tb-2-manete-impecabil-IDjpxRu.html"
-  },
-  {
-    "title": "Reparatii Service Ps5 Playstation 5 Sony Xbox One Series X Ps4 Switch",
-    "price": "N/A",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps5-playstation-5-sony-xbox-one-series-x-ps4-switch-IDfYRn8.html"
   },
   {
     "title": "Vând pachet PlayStation 4 Pro + Move Controller + Kit VR complet",
@@ -2870,13 +2877,6 @@
     "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-pro-modat-jailbroken-IDk2DoT.html"
   },
   {
-    "title": "PS4 Slim - FC 26 GTA V Minecraft Consola  Stare Excelenta",
-    "price": "899 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps4-slim-fc-26-gta-v-minecraft-consola-stare-excelenta-IDk3cxh.html"
-  },
-  {
     "title": "PS4 Pro 1TB + 2 manete și 4 baterii",
     "price": "350 lei",
     "location": "N/A",
@@ -2889,6 +2889,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/playstation-5-digital-edition-IDk0Ifa.html"
+  },
+  {
+    "title": "Mafia Trilogy ps4 ps5",
+    "price": "5100 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/mafia-trilogy-ps4-ps5-IDk512K.html"
   },
   {
     "title": "QwertyKey H61 Split Alba Hotswap RGB Tastatura Mecanica Gaming",
@@ -2996,6 +3003,13 @@
     "link": "https://www.olx.ro/d/oferta/play-station-5-slim-disk-1tb-aproape-nou-maneta-wireless-dualsense-IDk0CYP.html"
   },
   {
+    "title": "Vând ps.4 preț 210",
+    "price": "069 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/vand-ps-4-pret-210-IDjYSff.html"
+  },
+  {
     "title": "Maneta ps5 fara zgrieturi fara defecte noua din cutie",
     "price": "300 lei",
     "location": "N/A",
@@ -3015,13 +3029,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/gran-turismo-sport-playstation-4-playstation-5-IDjVn2W.html"
-  },
-  {
-    "title": "Playstation 4 slim citiți anunțul (modabil)",
-    "price": "700 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-4-slim-cititi-anuntul-modabil-IDk6kAf.html"
   },
   {
     "title": "Metal Gear Solid Delta - Day One Edition PS 5",
@@ -3080,13 +3087,6 @@
     "link": "https://www.olx.ro/d/oferta/playstation-4-ps4-slim-2tb-modat-150-cele-mai-noi-jocuri-IDjhm5u.html"
   },
   {
-    "title": "Pachet 4 Jocuri Uncharted 1,2,3,4 Playstation4, Playstation 5",
-    "price": "5150 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/pachet-4-jocuri-uncharted-1-2-3-4-playstation4-playstation-5-IDjEEGZ.html"
-  },
-  {
     "title": "Vând sau schimb Trotineta electrica JRH",
     "price": "450 lei",
     "location": "N/A",
@@ -3094,18 +3094,18 @@
     "link": "https://www.olx.ro/d/oferta/vand-sau-schimb-trotineta-electrica-jrh-IDk4rlx.html"
   },
   {
-    "title": "PlayStation 5 Disc Editie Limitata Spider-Man Folosit Impecabil",
-    "price": "200 lei",
+    "title": "Reparatii Service Ps5 Playstation 5 Sony Xbox One Series X Ps4 Switch",
+    "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/playstation-5-disc-editie-limitata-spider-man-folosit-impecabil-IDk4Vs5.html"
+    "link": "https://www.olx.ro/d/oferta/reparatii-service-ps5-playstation-5-sony-xbox-one-series-x-ps4-switch-IDfYRn8.html"
   },
   {
-    "title": "PS4 joc cd Project cars editie limitata",
-    "price": "60 lei",
+    "title": "Pachet 4 Jocuri Uncharted 1,2,3,4 Playstation4, Playstation 5",
+    "price": "5150 lei",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/ps4-joc-cd-project-cars-editie-limitata-IDjSgbH.html"
+    "link": "https://www.olx.ro/d/oferta/pachet-4-jocuri-uncharted-1-2-3-4-playstation4-playstation-5-IDjEEGZ.html"
   },
   {
     "title": "PROMOVAT",
@@ -3126,7 +3126,7 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/service-reparatii-modari-console-xbox-playstation-nintendo-ID3Ktf0.html"
+    "link": "https://www.olx.ro/d/oferta/reparatie-console-reparatie-playstation-reparatii-xbox-nintendo-IDiOSAV.html"
   },
   {
     "title": "Consola Nintendo Switch",
@@ -3134,6 +3134,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/consola-nintendo-switch-IDk5y9t.html"
+  },
+  {
+    "title": "Pachet joc nintendo switch",
+    "price": "000 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/pachet-joc-nintendo-switch-IDk6nXA.html"
   },
   {
     "title": "Vand Nintendo Switch",
@@ -3162,13 +3169,6 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/nintendo-switch-reparatii-service-asistenta-tehnica-IDbU3f6.html"
-  },
-  {
-    "title": "Nintendo switch",
-    "price": "000 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/nintendo-switch-IDjL92J.html"
   },
   {
     "title": "- Bundle Nintendo Switch Oled - Un joy-con defect si un discount imens",
@@ -3203,7 +3203,7 @@
     "price": "N/A",
     "location": "N/A",
     "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/reparatie-console-reparatie-playstation-reparatii-xbox-nintendo-IDiOSAV.html"
+    "link": "https://www.olx.ro/d/oferta/service-reparatii-modari-console-xbox-playstation-nintendo-ID3Ktf0.html"
   },
   {
     "title": "Nintendo switch plus 4 jocuri",
@@ -3213,18 +3213,18 @@
     "link": "https://www.olx.ro/d/oferta/nintendo-switch-plus-4-jocuri-IDk3pVb.html"
   },
   {
-    "title": "Pachet joc nintendo switch",
-    "price": "000 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/pachet-joc-nintendo-switch-IDk6nXA.html"
-  },
-  {
     "title": "Joc Metroid Prime Remastered pentru Nintendo Switch",
     "price": "160 lei",
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/joc-metroid-prime-remastered-pentru-nintendo-switch-IDjV1tY.html"
+  },
+  {
+    "title": "Nintendo switch",
+    "price": "000 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/nintendo-switch-IDjL92J.html"
   },
   {
     "title": "Nintendo switchh",
@@ -3246,6 +3246,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/husa-bumper-grip-husa-transparenta-folie-nintendo-switch-IDjmoyl.html"
+  },
+  {
+    "title": "Reparație console. Reparatie Playstation. Reparatii Xbox, Nintendo",
+    "price": "N/A",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/reparatie-console-reparatie-playstation-reparatii-xbox-nintendo-IDiOSAV.html"
   },
   {
     "title": "Nintendo Switch Lite Pokemon Zacian & Zamazenta Edition",
@@ -3437,13 +3444,6 @@
     "link": "https://www.olx.ro/d/oferta/kit-periferice-gaming-tastatura-mouse-controller-IDjGDlb.html"
   },
   {
-    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
-    "price": "450 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
-  },
-  {
     "title": "Nintendo switch stare nou",
     "price": "000 lei",
     "location": "N/A",
@@ -3456,6 +3456,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/reparatie-console-iasi-reparatie-playstation-xbox-nintendo-IDiPQwo.html"
+  },
+  {
+    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
+    "price": "450 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
   },
   {
     "title": "Nintendo Switch Console",
@@ -3549,13 +3556,6 @@
     "link": "https://www.olx.ro/d/oferta/kit-periferice-gaming-tastatura-mouse-controller-IDjGDlb.html"
   },
   {
-    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
-    "price": "450 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
-  },
-  {
     "title": "Nintendo switch stare nou",
     "price": "000 lei",
     "location": "N/A",
@@ -3568,6 +3568,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/reparatie-console-iasi-reparatie-playstation-xbox-nintendo-IDiPQwo.html"
+  },
+  {
+    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
+    "price": "450 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
   },
   {
     "title": "Nintendo Switch Console",
@@ -3661,13 +3668,6 @@
     "link": "https://www.olx.ro/d/oferta/kit-periferice-gaming-tastatura-mouse-controller-IDjGDlb.html"
   },
   {
-    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
-    "price": "450 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
-  },
-  {
     "title": "Nintendo switch stare nou",
     "price": "000 lei",
     "location": "N/A",
@@ -3680,6 +3680,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/reparatie-console-iasi-reparatie-playstation-xbox-nintendo-IDiPQwo.html"
+  },
+  {
+    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
+    "price": "450 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
   },
   {
     "title": "Nintendo Switch Console",
@@ -3773,13 +3780,6 @@
     "link": "https://www.olx.ro/d/oferta/kit-periferice-gaming-tastatura-mouse-controller-IDjGDlb.html"
   },
   {
-    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
-    "price": "450 lei",
-    "location": "N/A",
-    "date": "N/A",
-    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
-  },
-  {
     "title": "Nintendo switch stare nou",
     "price": "000 lei",
     "location": "N/A",
@@ -3792,6 +3792,13 @@
     "location": "N/A",
     "date": "N/A",
     "link": "https://www.olx.ro/d/oferta/reparatie-console-iasi-reparatie-playstation-xbox-nintendo-IDiPQwo.html"
+  },
+  {
+    "title": "Pachet consola N Switch modata soft cu card 64-128-256gb",
+    "price": "450 lei",
+    "location": "N/A",
+    "date": "N/A",
+    "link": "https://www.olx.ro/d/oferta/pachet-consola-n-switch-modata-soft-cu-card-64-128-256gb-IDfBnpf.html"
   },
   {
     "title": "Nintendo Switch Console",
